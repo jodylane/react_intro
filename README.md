@@ -1,4 +1,4 @@
-# # Introduction to React
+## Introduction to React
 
 ## Text editor set up for Atom
 In this tutorial I will be using atom as my text-editor of choice you can use whatever text-editor you would like but for those of you who like to follow along exactly as I do use atom. Below are all the packages you will want to install with atom. Basically what we are doing is adding linters and different packages that make atom easier and better to use.
