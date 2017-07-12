@@ -77,3 +77,32 @@ npm install --save react react-dom
 ```
 
 npm init is going to allow us to build a package.json file which will keep track of our dependencies. running npm init on its own will walk you through a bunch of steps and ask you to fill out as best you can a bunch of information about your application. Adding the -y at the end of this command will let our package manager to guess as best as it can what each field should be named
+
+## Components
+In React basic components can be written in regular javascript. 
+
+```
+
+function Welcome(props){
+  return ( <h1>Welcome {props.name}!</h1> )
+}
+
+```
+
+They can be rendered to the DOM by calling the render() method.
+
+```
+
+ReactDom.render(
+  <Welcome name="James"/>,
+  document.getElementById('root')
+);
+
+```
+
+Components can accessed once their function is written components should be written with capital letters "Welcome" 
+Then they can be written like normal html elements and that will access the Welcome function. 
+
+Props work by passing attributes from an html component element. By calling an attribute called name and setting it equal to James
+
+I can now access props.name to return whatever name was passed to that component.
