@@ -78,6 +78,13 @@ npm install --save react react-dom
 
 npm init is going to allow us to build a package.json file which will keep track of our dependencies. running npm init on its own will walk you through a bunch of steps and ask you to fill out as best you can a bunch of information about your application. Adding the -y at the end of this command will let our package manager to guess as best as it can what each field should be named
 
+## Important Issues to Note
+All editing should be done in the src folder due to webpack. Everything in the src folder will be reformatted and restructured into minified files and compiled into there smallest form. Any changes made outside of this folder will not be added to the build folder.
+
+In order for React to know what styles you want to use you have to import your stylesheet in that javascript file. React currently does not support any css pre-processors but it does offer an autoprefixer which minifies your stylesheets and takes care of all css prefixes that you may need after building.
+
+Changing environmental variables requires you to restart the development server
+
 ## Components
 In React basic components can be written in regular javascript. 
 
